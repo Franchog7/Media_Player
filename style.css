@@ -1,0 +1,192 @@
+
+* {
+  color: #0A0D40;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16pt;
+  /* font-weight: 400; */
+  list-style: none;
+  text-decoration: none;
+  text-shadow: 0px, 0px, 0px, 0px;
+  text-align: justify;
+  
+  
+  /* border: solid 1px yellow;   */
+  /* border: none; */
+  
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  
+  box-sizing: border-box; /* siempre va en todos los proyectos, evita que el padding haga que crezca la caja */ 
+  
+}
+
+/* body */
+
+.jumbotron {
+  width: 100vw;
+  height: 100vh;
+  background:  linear-gradient(#8226BF 5%, #01D6A2 90%);
+  position:absolute;
+  z-index: -1000;
+  opacity: .69;
+  top: 0;
+  left: 0;
+}
+.headerlist {
+  display: flex;
+  font-size: 16pt;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 66px; /* Space between items */
+}
+
+
+/* header */
+
+.header .nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 380px;
+  align-items: center;
+}
+
+
+.disco {
+  align-items: center;
+  padding: 16px 30px 0px 180px
+}
+
+
+
+.headerlist a { /* Target link elements within the list */
+  color: inherit; /* Inherit text color */
+  transition: color 0.03s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.headerlist a:hover { /* Hover effect for links */
+  color: #8226BF; /* Change text color on hover */
+}
+
+.header .nav .login {
+  background: linear-gradient(to right, #8226BF 0%, #01D6A2 70%) -30px 0;
+  background-size: 220%;
+  color: #01D6A2;
+  padding: 10px 20px;
+  margin-right: 100px;
+  border-radius: 10px;
+  border: solid 1px #8226BF;
+  transition: all 0.01 ease-in-out;
+}
+
+.login:hover {
+  transform: scale(1.1);
+  animation: gradient 0.223s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: -20px 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.h1 {
+  font-size: 2em;
+  display: flex;
+  margin: 0 1 auto;
+  padding: 60px 30px 30px 70px;
+}
+
+/* main */
+
+main {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row-reverse;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    /* padding: 32px 45px 90px 10px;
+    margin: 30px 50px 20px 20px;   */
+    justify-content: space-around;
+    align-items: center;
+    border-left: solid 2px #01D6A2;
+}
+
+.section1div {
+  padding: 30px 40px 30px 70px;
+}
+
+.section1list {
+  transition: color 0.03s ease-in-out;
+}
+
+.section1list:hover {
+    color: inherit; /* Inherit text color */
+    transition: color 0.03s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.section1list a:hover { /* Hover effect for links */
+color: #8226BF;
+}
+
+
+.img {
+  margin: 25px;
+  border-radius: 15px;
+}
+
+/* tracklist section */
+
+.tracklist {
+  display: flex;
+  flex-direction: column;
+  gap: 16pt;
+  border: solid 1px #8226BF;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+
+/* footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 60vw; */
+
+}
+
+.footer1 {
+  padding: 10px 30px 30px 130px;
+}
+
+
+.footerdisco {
+  padding: 10px 30px 10px 70px;
+}
+
+.footerlist {
+  padding: 70px 150px 30px 30px;
+    transition: all 0.1s ease-in-out;
+    transition: color 0.03s ease-in-out;
+}
+
+.footerlist:hover {
+    color: inherit; /* Inherit text color */
+    transition: color 0.13s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.footerlist a:hover { /* Hover effect for links */
+color: #8226BF;
+}
