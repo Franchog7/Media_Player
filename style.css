@@ -126,6 +126,11 @@ main {
     box-shadow: 0 0 3.8rem #8226bfd1;
   }
 
+  input {
+    border: 1px solid;
+    align-items: center;
+  }
+
 .section1div {
   padding: 30px 40px 30px 70px;
 }
