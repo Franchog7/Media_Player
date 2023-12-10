@@ -11,8 +11,8 @@
   text-align: justify;
   
   
-  /* border: solid 1px yellow;   */
-  /* border: none; */
+  border: solid 1px yellow;  
+  border: none;
   
   margin: 0;
   padding: 0;
@@ -22,35 +22,16 @@
   
 }
 
-/* body */
+/* header */
+
 
 .h1 {
   font-size: 2em;
   display: flex;
-  /* margin: 0 1 auto; */
-  padding: 40px 0px 10px 60px;
+  padding: 10px 0px 10px 10px;
+  margin: 10px;
 }
 
-.jumbotron {
-  width: 100%;
-  height: 100%;
-  background:  linear-gradient(#8226BF 5%, #01D6A2 90%);
-  position:absolute;
-  z-index: -1000;
-  opacity: .69;
-  top: 0;
-  left: 0;
-}
-
-
-.headerlist {
-  display: flex;
-  font-size: 16pt;
-  gap: 50px; /* Space between items */
-}
-
-
-/* header */
 
 .header .nav {
   display: flex;
@@ -61,10 +42,23 @@
 
 
 .disco {
-  align-items: center;
-  padding: 16px 30px 0px 180px
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 10px 10px 120px;
+  transition: all 1.5s ease-in;
 }
 
+.disco:hover {
+  transition-property: initial;
+}
+
+.headerlist {
+  display: flex;
+  /* font-size: 24px; */
+  gap: 50px; /* Space between items */
+}
 
 
 .headerlist a { /* Target link elements within the list */
@@ -80,12 +74,13 @@
   background: linear-gradient(to right, #8226BF 0%, #01D6A2 70%) -30px 0;
   background-size: 220%;
   color: #01D6A2;
-  padding: 10px 20px;
-  margin-right: 100px;
+  padding: 10px 25px;
+  margin-right: 80px;
   border-radius: 10px;
   border: solid 1px #8226BF;
   transition: all 0.01 ease-in-out;
 }
+
 
 .login:hover {
   transform: scale(1.1);
@@ -101,12 +96,24 @@
   }
 }
 
+/* body */
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(#8226BF 5%, #01D6A2 90%);
+  position:absolute;
+  z-index: -1000;
+  opacity: .69;
+  top: 0;
+  left: 0;
+}
 
 /* main */
 
 main {
   display: flex;
-  margin-top: 60px;
+  margin-top:80px;
   flex-direction: row-reverse;
   justify-content:space-evenly;
   align-items: center;
@@ -177,7 +184,7 @@ color: #8226BF;
 }
 
 .footer1 {
-  padding: 10px 30px 10px 130px;
+  padding: 10px 10px 10px 80px;
 }
 
 
@@ -186,7 +193,7 @@ color: #8226BF;
 }
 
 .footerlist {
-  padding: 50px 160px 10px 30px;
+  padding: 50px 100px 10px 30px;
     transition: all 0.1s ease-in-out;
     transition: color 0.03s ease-in-out;
 }
