@@ -32,6 +32,13 @@
   margin: 10px;
 }
 
+.h1:hover {
+  transform: scaleX(1.12);
+  transition: all 1.27s ease-in-out; 
+  animation:infinite 3.5s;
+
+}
+
 
 .header .nav {
   display: flex;
@@ -39,7 +46,6 @@
   gap: 380px;
   align-items: center;
 }
-
 
 .disco {
   display: flex;
@@ -49,6 +55,12 @@
   margin: 10px 10px 10px 120px;
   transition: all 1.2s ease;
 }
+
+.disco:hover {
+    transform: scaleX(1.52);
+    transition: all 1.27s ease-in-out; 
+    animation:infinite 3.5s;
+  }
 
 .headerlist {
   display: flex;
@@ -122,7 +134,7 @@ main {
 
 @keyframes radialGradient {
   0% {
-    background-position: -5px 300;
+    background-position: -15px 300;
   }
   100% {
     background-position: -500% 100%;
