@@ -36,7 +36,15 @@
 .header .nav {
   display: flex;
   justify-content: space-evenly;
-  gap: 380px;
+
+
+  /* 
+     Misma observación que en el proyecto anterior
+     no utilizar gap si se puede usar justify-content: space-beetwen
+  */
+  /* gap: 380px; */
+  justify-content: space-between;
+
   align-items: center;
 }
 
@@ -214,6 +222,17 @@ color: #01D6A2;
   border-radius: 15px;
   padding: 45px;
   box-shadow: 0 0 3.8rem #01D6A2;
+}
+
+/* Los efectos hover le indican al usuario donde hacer click 
+   puedes usarlos en las canciones para que el usuario reconozca que debe hacer click en la cancion
+   tambien la separo solo un poco entre ellas
+*/
+.tracklist li {
+  margin: 4pt 0;
+}
+.tracklist li:hover { /* Hover effect for links */
+  color: #01d6a1dc; /* Change text color on hover */
 }
 
 /* footer */
