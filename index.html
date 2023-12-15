@@ -43,15 +43,14 @@
     <main>
         <Section class="section1">
             <div class="section1div">
-                <p><strong>Now playing:</strong> Time - Klangkarussell</p>
-                
+                <h2 id="author"><strong>Author</strong></h2>
+                <p id="songtitle">Track name</p>
             </div>
             <div>
-                <audio controls>
-                <source src="" type="audio">
+                <audio id="songaudio" src="" controls autoplay></audio>
             </div>
 
-                <img class="img" src="https://articles-img.sftcdn.net/f_auto,t_article_cover_l/auto-mapping-folder/sites/2/2020/04/apps-mezclar-header.jpg" height="159px" width="290px" alt="dj">
+                <img id="imageaudio" class="img" src="https://articles-img.sftcdn.net/f_auto,t_article_cover_l/auto-mapping-folder/sites/2/2020/04/apps-mezclar-header.jpg" height="159px" width="290px" alt="dj">
                 
                 <ol class="section1list">
                     <li><a href="https://youtube.com/playlist?list=PLk3RYD-YyUgDY7OG-4XDQ3DS8SQQPjYzI&si=pfQzw4uC4Onnbm-e">CREATE PLAYLIST</a></li>
@@ -67,20 +66,9 @@
     
             <h4>SONGS LIST</h4>
 
-            <ol>
-                <li>Time - Klangkarussell</li>
-                <li>Double the Lust - Umek</li>
-                <li>Live Again - Layton Giorgani, Danny Tenaglia</li>
-                <li>Capsule - Adam beyer, Pig&Dan</li>
-                <li>Solid Buzz - Industrialyzer</li>
-                <li>Let There Be Dark - Beico & MT93</li>
-                <li>Tool 101 - Cleric</li>
-                <li>Eclipse - Wehbba</li>
-                <li>Levo - Recondite</li>
-                <li>We didn’t know - SAMA</li>
+            <ol id="tracklist">
                 
             </ol>
-            
                 <!-- <form action="/php.com">Search</form> -->
                 <a href="index.html"><button class="buttonlist">Search</button></a>
                 <input type="text">
